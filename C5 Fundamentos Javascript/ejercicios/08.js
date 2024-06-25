@@ -7,6 +7,22 @@ function esNumeroEntero(numero) {
   // -1212 ---> true 
   // 121.212 ---> false 
   // Tu código:
+
+  if (typeof(numero) != "number"){
+      console.log("El dato no es un numero")
+      return false;
+  } else if (numero % 1 == 0) {
+    console.log("El numero es decimal ? " + true);
+      return true;
+
+  }else {
+
+    console.log("El numero es decimal ? " + false);
+    return false;
+    
+  }
 }
+
+esNumeroEntero(45.2);
 
 module.exports = esNumeroEntero;

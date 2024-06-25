@@ -6,6 +6,15 @@ function sonIguales(x, y) {
   // 5, 5 ---> true 
   // 5, 8 ---> false 
   // Tu código:
+  if(x === y){
+    console.log("true");
+    return true;
+  }else {
+    console.log("false");
+    return false;
+  }
 }
+
+sonIguales(6, 4);
 
 module.exports = sonIguales;
